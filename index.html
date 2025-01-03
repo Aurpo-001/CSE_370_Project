@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sukuna Was The Strongest</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the index page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent header */
+            color: rgb(67, 67, 67);
+            padding: 10px 20px;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-title {
+            color: #7c2f2f; /*color of sukuna was the strongest*/
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+            font-size: 2.5em; /* Increase font size if needed */
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(51, 51, 51, 0.8); /* Transparent navigation */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(128, 20, 20, 0.7); /* Transparent red background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for better aesthetics */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #375a83;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        .title {
+            color: #4CAF50; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+
+        .search-box {
+            background-color: rgba(128, 20, 20, 0.8); /* Transparent red color */
+            color: white;
+            border: 1px solid #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-box::placeholder {
+            color: #ddd; /* Light gray placeholder text */
+        }
+
+        /* Video background styling */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place behind content */
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video class="video-bg" autoplay loop muted>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Welcome to Sukuna Was The Strongest</h1>
+        <nav class="navbar">
+            <a href="services.html" class="btn">Services</a>          
+            <a href="index.html" class="btn">Home</a>
+            <a href="about_us.html" class="btn">About Us</a>
+            <a href="contact.html" class="btn">Contact</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+        <div class="container">
+            <h2>Explore Opportunities</h2>
+            <p>Find universities in the UK and USA and unlock your potential.</p>
+            <a href="universities.php" class="btn">View Universities</a>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section content-overlay" id="universities">
+        <h2 class="title">Find Your Ideal University</h2>
+        <form action="search.php" method="GET">
+            <!-- Make all fields optional for flexible searching -->
+            <input type="text" class="search-box" name="location" placeholder="Enter Location or City">
+            <input type="text" class="search-box" name="program" placeholder="Enter program">
+            <input type="text" class="search-box" name="name" placeholder="Enter university name">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="padding: 40px 10%; background-color: rgba(128, 20, 20, 0.8);" class="content-overlay">
+        <h2>Our Services</h2>
+        <ul>
+            <li>University Application Assistance</li>
+            <li>Visa Guidance</li>
+            <li>Scholarship Information</li>
+            <li>Accommodation Services</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sukuna Was The Strongest. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

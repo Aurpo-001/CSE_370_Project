@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1c1c;
+            color: #333;
+        }
+
+        header {
+            background-color: #853838;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgb(73, 70, 70);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #28355f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .block img {
+            width: 200px; /* image size. */
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: right;
+            margin-left: 15px;
+        }
+
+        .block p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .video-section iframe {
+            border: 0;
+            width: 100%;
+            max-width: 400px;
+            height: 225px;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #46a244;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us...or not, we don't care.</h1>
+    </header>
+    <div class="container">
+        <!-- Contact Information Block -->
+        <div class="block">
+            <img src="images/mvp.jpg" alt="MVP Image">
+            <p>
+                "Life is not fair; just because you want to contact us doesn't mean we'd want the same. 
+                But still, here is the contact number of The MVP: 
+                <strong style="color: #4CAF50;">01706752259</strong>."
+            </p>
+        </div>
+
+        <!-- Video Section Block -->
+        <div class="block video-section">
+            <p>
+                "If you cannot reach the number, please watch this awesome video with great animation 
+                where a lot of hard work was invested."
+            </p>
+            <iframe 
+                src="https://www.youtube.com/embed/_jZ6WDKgQvY?si=Uy0w2HpgYPTs1fqZ" 
+                title="YouTube video" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>
