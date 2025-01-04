@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Sukuna Was The Strongest</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #7c2f2f, #1d1c1c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .signup-section {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .signup-section h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #f8f8f8;
+        }
+
+        .signup-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .signup-form input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .signup-form input::placeholder {
+            color: #ccc;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7c2f2f;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-form button:hover {
+            background-color: #bf4040;
+        }
+
+        .signup-section .container {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="signup-section">
+        <div class="container">
+            <h1>Create an Account</h1>
+            <form action="signup.php" method="POST" class="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required placeholder="Enter your location">
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Create a password">
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
