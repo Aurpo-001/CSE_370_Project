@@ -16,7 +16,7 @@
 
         header {
             background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent header */
-            color: rgb(67, 67, 67);
+            color: rgb(14, 14, 14);
             padding: 10px 20px;
             text-align: center;
             z-index: 2;
@@ -24,9 +24,9 @@
         }
 
         .header-title {
-            color: #7c2f2f; /*color of sukuna was the strongest*/
+            color: #7c2f2f; /* Color of Sukuna Was The Strongest */
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
-            font-size: 2.5em; /* Increase font size if needed */
+            font-size: 2.5em;
             font-weight: bold;
         }
 
@@ -85,14 +85,14 @@
         }
 
         .title {
-            color: #4CAF50; 
+            color: #af4c4c; 
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
         }
 
         .search-box {
             background-color: rgba(128, 20, 20, 0.8); /* Transparent red color */
             color: white;
-            border: 1px solid #4CAF50;
+            border: 1px solid #af4c4c;
             padding: 10px;
             border-radius: 5px;
             font-size: 16px;
@@ -130,11 +130,10 @@
     <header>
         <h1 class="header-title">Welcome to Sukuna Was The Strongest</h1>
         <nav class="navbar">
-            <a href="services.html" class="btn">Services</a>          
-            <a href="index.html" class="btn">Home</a>
+            <a href="services.html" class="btn">Services</a>
             <a href="about_us.html" class="btn">About Us</a>
             <a href="contact.html" class="btn">Contact</a>
-            <a href="logout.php">Logout</a>
+            <a href="login.html" class="btn">Logout</a>
         </nav>
         <div class="container">
             <h2>Explore Opportunities</h2>
@@ -147,7 +146,6 @@
     <section class="search-section content-overlay" id="universities">
         <h2 class="title">Find Your Ideal University</h2>
         <form action="search.php" method="GET">
-            <!-- Make all fields optional for flexible searching -->
             <input type="text" class="search-box" name="location" placeholder="Enter Location or City">
             <input type="text" class="search-box" name="program" placeholder="Enter program">
             <input type="text" class="search-box" name="name" placeholder="Enter university name">
